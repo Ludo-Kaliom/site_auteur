@@ -1,0 +1,237 @@
+body {
+    width: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../images/fond.jpg);
+}
+
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    font-variant-caps: small-caps;
+}
+
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    font-variant-caps: small-caps;
+}
+
+p {
+    font-size: 18px;
+    text-align:justify;
+}
+
+a {
+color:indigo
+}
+
+table {
+    table-layout: fixed;
+    width: auto;
+    border-collapse: collapse;
+    border: 3px solid grey;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+/* ############header########## */
+
+.header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border:5px ridge grey;
+    border-radius:10px;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin: 0;
+    background-image: url(../images/fond2.jpg);
+}
+
+.headergauche {
+    grid-column: span 1;
+    text-align: center;
+}
+
+.headergauche img {
+    max-width: 70%;
+    height: auto;
+}
+
+
+.headerdroite {
+    grid-column-start: 2;
+}
+
+
+/* ############menu########## */
+
+#menu {
+    display: grid;
+}
+
+#liste {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-self: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu a {
+    display: block;
+    background-image: url(../images/fond2.jpg);
+    text-decoration:none;
+    text-align:center;
+    border:5px ridge grey;
+    border-radius:10px;
+    padding:5px;
+    margin: 5px;
+    color: black;
+    transition: all 1s ease-out;  
+}
+
+#menu a:hover,:focus {
+    background-image: url(../images/fond.jpg);
+    color: white;
+}
+
+
+/* ############centre########## */
+
+
+.centre {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border:5px ridge grey;
+    padding:10px;
+    border-radius:10px;
+    background-image: url(../images/fond2.jpg);
+}
+    
+/* ############centre gauche########## */
+
+.cgauche {
+    border:5px ridge grey;
+    border-radius:10px;
+    align-self: center;
+    justify-self: center;
+}
+    
+    
+.cgauche img {
+    max-width:100%;
+    height:auto;
+}
+    
+
+/* ############centre droite########## */
+
+.cdroite {
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+}
+    
+
+/* ############tableau gauche########## */
+
+
+.tabgauche {
+    align-self: center;
+    justify-self: center;
+    padding-top: 20px;
+}
+    
+/* ############tableau droite########## */
+    
+.tabdroite {
+    border:5px ridge grey;
+    border-radius:10px;
+}
+    
+.tabdroite img {
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+    max-width:100%;
+    height:auto;
+} 
+
+
+ /* ############targetcontact########## */ 
+ 
+#item {
+    display:block
+}
+
+#item1 {
+    display: none;
+}
+ 
+#item1:target {
+    display: block;
+ }
+
+  /* ############formulaire########## */
+ 
+ .formulaire {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    border:5px ridge grey;
+    padding:10px;
+    border-radius:10px;
+    background-image: url(../images/fond2.jpg);
+}
+
+ form {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  form div + div {
+    margin-top: 10px;
+}
+  
+  label {
+    display: inline-block;
+    width: 90px;
+}
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 10em;
+}
+  
+  .button {
+      text-align: center;
+}
+  
+  button {
+    background-image: url(../images/fond2.jpg);
+    text-decoration:none;
+    border:5px ridge grey;
+    border-radius:10px;
+    padding:5px;
+    margin: 5px;
+}
+
